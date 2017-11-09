@@ -1,2 +1,4 @@
 # phoneCutImgLoad
 mobile_cut_images_load
+
+手机端图片裁切上传demo，ios端图片旋转调整，但是在裁切过程中会存在基准点儿裁切的偏移；在android系统中不会存在图片旋转和裁切问题

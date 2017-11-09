@@ -1,0 +1,54 @@
+/*reset */
+html{color:#000;overflow-y:scroll;max-width:1024px;margin:0 auto;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
+html *{outline:0;-webkit-text-size-adjust:none;-webkit-tap-highlight-color:rgba(0,0,0,0)}
+body {background:#FFF;font:400 14px/1.5 "Microsoft YaHei",'\5B8B\4F53',Helvetica,tahoma,arial,'Hiragino Sans GB',sans-serif;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{margin:0;padding:0}
+input,select,textarea{font-size:100%}
+article,aside,footer,header,nav,section,audio,canvas,video,img {display:block;}
+table{border-collapse:collapse;border-spacing:0}
+fieldset,img{border:0}
+abbr,acronym{border:0;font-variant:normal}
+del{text-decoration:line-through}
+address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:normal}
+ol,ul{list-style:none}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+q:before,q:after{content:''}
+button{outline:0;border:none;}
+a{color:#333; text-decoration:none;cursor:pointer;}
+a:hover{text-decoration:none}
+ins,a{text-decoration:none}
+textarea {resize: none;}
+iframe,img {border:0;}
+img{display:block;width:100%;}
+ul,ol {list-style:none;}
+input,select,textarea {outline: 0;-webkit-user-modify:read-write-plaintext-only;}
+input,textarea {vertical-align: middle;font-family:"Microsoft YaHei",'\5b8b\4f53',tahoma,arial,'Hiragino Sans GB',sans-serif;outline: none;}
+input {-webkit-appearance:none;}
+.pr{position:relative;}
+.abs{position: absolute}
+.fl{float:left;display:inline-block;}
+.fr{float:right;display:inline-block;}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix{*zoom:1;} 
+
+ @media (min-width:400px){html,body,textarea,button,a,input,select{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}}
+html,body,textarea,button,input,select{font-size:30px}
+
+
+
+@media all and (max-width: 1080px){html,body,textarea,button,input,select{font-size:28px}}
+@media all and (max-width: 768px){html,body,textarea,button,input,select{font-size:26px}}
+@media all and (max-width: 750px){html,body,textarea,button,input,select{font-size:24px}}
+@media all and (max-width: 720px){html,body,textarea,button,input,select{font-size:22px}}
+@media all and (max-width: 640px){html,body,textarea,button,input,select{font-size:20px}}
+@media all and (max-width: 480px){html,body,textarea,button,input,select{font-size:18px}}
+@media all and (max-width: 420px){html,body,textarea,button,input,select{font-size:16px}}
+@media all and (max-width: 380px){html,body,textarea,button,input,select{font-size:14px}}
+@media all and (max-width: 320px){html,body,textarea,button,input,select{font-size:12px}}
+
+
+.tail{width:inherit;height:auto;margin-top:0.5rem;font-size:inherit;}
+.tail > p{width:inherit;height:0.4rem;line-height:0.4rem;text-align:right;font-size:inherit;color:currentColor;}
+.tail > p > em{font-size:inherit;color:#f00;}
+

@@ -1,0 +1,151 @@
+/*  字体大小样式变量部分   */
+:root{
+	/*  首页面  */
+	--top_fontSize_search:0.26rem;
+	--top_fontSize_login:0.24rem;
+	--top_fontSize_banner:0.3rem;
+	--index_fontSize_menu:0.22rem;
+	--index_fontSize_assist:0.26rem;
+	--index_fontSize_assist_span:0.22rem;
+	--index_fontSize_mainTitle:0.26rem;
+	--index_fontSize_minorTitle:0.22rem;
+	--index_fontSize_sliderTitle:0.2rem;
+	--index_fontSize_contentSwitch:0.28rem;
+	--index_fontSize_contentTitle:0.26rem;
+	--index_fontSize_contentTime:0.22rem;
+	--index_fontSize_loadMore:0.24rem;
+	--index_fontSize_footTop:0.26rem;
+	--index_fontSize_footBottom:0.22rem;
+	
+	
+	
+	
+	
+	
+	
+	--top_font_size_back:0.26rem;
+	--top_font_size_pos:0.3rem;
+	--top_font_size_search:0.18rem;
+	--top_font_size_login:0.24rem;
+	--banner_font_size:0.26rem;
+	--h2_font_size:0.26rem;
+	--p_font_size:0.22rem;
+	--p_font_size_title:0.32rem;
+	--article_font_size_title:0.38rem;
+	--article_font_size:0.26rem;
+	--article_font_size_remark:0.24rem;
+	--footer_font_size_t:0.3rem;
+	--footer_font_size_b:0.26rem;
+	--spArticle_font_size_share:0.26rem;
+	--sort_font_size_title:0.28rem;
+	--sort_font_size_remark:0.26rem;
+	--search_font_size:0.25rem;
+	--load_font_size:0.26rem;
+	--yxtitle_font_size:0.3rem;
+	--yxtitle_font_size_remark:0.26rem;
+	--yxtitle_font_size_bottom:0.22rem;
+
+}
+
+
+
+@media  ( min-width:750px ){
+	:root{
+		/*  首页面  */
+		--top_fontSize_search:0.28rem;
+		--top_fontSize_login:0.28rem;
+		--top_fontSize_banner:0.34rem;
+		--index_fontSize_menu:0.26rem;
+		--index_fontSize_assist:0.3rem;
+		--index_fontSize_assist_span:0.24rem;
+		--index_fontSize_mainTitle:0.3rem;
+		--index_fontSize_minorTitle:0.24rem;
+		--index_fontSize_sliderTitle:0.24rem;
+		--index_fontSize_contentSwitch:0.32rem;
+		--index_fontSize_contentTitle:0.3rem;
+		--index_fontSize_contentTime:0.26rem;
+		--index_fontSize_loadMore:0.3rem;
+		--index_fontSize_footTop:0.3rem;
+		--index_fontSize_footBottom:0.26rem;
+		
+		
+		
+		
+		
+		
+		--top_font_size_back:0.28rem;
+		--top_font_size_pos:0.34rem;
+		--top_font_size_search:0.22rem;
+		--top_font_size_login:0.26rem;
+		--banner_font_size:0.34rem;
+		--h2_font_size:0.32rem;
+		--p_font_size:0.28rem;
+		--p_font_size_title:0.4rem;
+		--article_font_size_title:0.4rem;
+		--article_font_size:0.28rem;
+		--article_font_size_remark:0.26rem;
+		--footer_font_size_t:0.32rem;
+		--footer_font_size_b:0.28rem;
+		--spArticle_font_size_share:0.28rem;
+		--sort_font_size_title:0.34rem;
+		--sort_font_size_remark:0.3rem;
+		--search_font_size:0.3rem;
+		--load_font_size:0.3rem;
+		--yxtitle_font_size:0.36rem;
+		--yxtitle_font_size_remark:0.3rem;
+		--yxtitle_font_size_bottom:0.26rem;
+	}
+
+}
+
+@media  ( min-width:1024px ){
+	:root{
+		/*  首页面  */
+		--top_fontSize_search:0.3rem;
+		--top_fontSize_login:0.32rem;
+		--top_fontSize_banner:0.38rem;
+		--index_fontSize_menu:0.3rem;
+		--index_fontSize_assist:0.36rem;
+		--index_fontSize_assist_span:0.28rem;
+		--index_fontSize_mainTitle:0.34rem;
+		--index_fontSize_minorTitle:0.26rem;
+		--index_fontSize_sliderTitle:0.26rem;
+		--index_fontSize_contentSwitch:0.36rem;
+		--index_fontSize_contentTitle:0.34rem;
+		--index_fontSize_contentTime:0.3rem;
+		--index_fontSize_loadMore:0.34rem;
+		--index_fontSize_footTop:0.32rem;
+		--index_fontSize_footBottom:0.28rem;
+		
+		
+		
+		
+		
+		
+		
+		
+		--top_font_size_back:0.36rem;
+		--top_font_size_pos:0.44rem;
+		--top_font_size_search:0.28rem;
+		--top_font_size_login:0.34rem;
+		--banner_font_size:0.42rem;
+		--h2_font_size:0.38rem;
+		--p_font_size:0.34rem;
+		--p_font_size_title:0.48rem;
+		--article_font_size_title:0.52rem;
+		--article_font_size:0.32rem;
+		--article_font_size_remark:0.28rem;
+		--footer_font_size_t:0.36rem;
+		--footer_font_size_b:0.34rem;
+		--spArticle_font_size_share:0.34rem;
+		--sort_font_size_title:0.28rem;
+		--sort_font_size_remark:0.24rem;
+		--sort_font_size_title:0.4rem;
+		--sort_font_size_remark:0.32rem;
+		--search_font_size:0.32rem;
+		--load_font_size:0.34rem;
+		--yxtitle_font_size:0.42rem;
+		--yxtitle_font_size_remark:0.36rem;
+		--yxtitle_font_size_bottom:0.3rem;
+	}
+}

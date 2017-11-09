@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html> 
+<html> 
+<head>
+<title>个人中心--修改头像</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Pragma" content="no-cache">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile/-web-app-capable" content="yes" />
+<meta content="yes" name="apple-touch-fullscreen">
+<meta content="telephone=no,email=no" name="format-detection">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+<link rel="apple-touch-icon" href="./images/favicon.ico">
+<link rel="Shortcut Icon" href="./images/favicon.ico" type="image/x-icon">
+
+<link href="./css/css.css" rel="stylesheet" type="text/css">
+<link href="./css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="./css/xgtx.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+
+<!-- 关于美术高考网页面头部  start  -->
+<header>
+	<div class="header">
+		<a href="javascript:window.history.go(-1);" class="backtop">返回</a>
+		<a href="/mobile.php" class="logo"><img src="./images/home.png" alt=""></a>
+		<span class="title">修改头像</span>
+		<a onclick="$('#form').submit();" class="store" id="save_avator">保 存</a>
+	</div>
+</header>
+<!-- 关于美术高考网页面头部  end  -->
+
+<!-- 内容栏目部分  start	 -->
+<section>
+	<form action="" id="form">
+		<div class="default_img" id="logoBox">
+			<img src="./images/userico.jpg" >
+		</div>
+	</form>
+
+	<div class="avator_contain">
+
+		<div id="clipArea"></div>
+
+	</div>
+
+	<div class="avator_change">
+		<button id="change_avator">修改头像</button>
+	</div>
+
+
+	<div class="avator_operate" id="avator_oper_show">
+		<!-- <p>
+			<input type="button" value="拍 照">
+			<input type="file">
+		</p> -->
+		<p>
+			<input type="button" value="从相册选择">
+			<input type="file" id="file" > 
+		</p>
+		<button id="confirm_avator">截取图片</button>
+	</div>
+
+</section>
+<!-- 内容栏目部分  end	 -->
+
+
+
+<script src="./js/jquery-3.1.1.min.js"></script>
+<script src="./js/rem.js"></script>
+<script src="./js/jquery.min.js"></script>
+
+<script src="./js/iscroll-zoom.js"></script>
+<script src="./js/hammer.js"></script>
+<script src="./js/exif.js"></script>
+<script src="./js/jquery.photoClip.js"></script>
+
+
+
+<script>
+
+$("#clipArea").photoClip({
+	width: 240,
+	height: 240,
+	file: "#file",
+	ok: "#confirm_avator",
+	loadStart: function() {
+		console.log("照片读取中");
+	},
+	loadComplete: function() {
+		console.log("照片读取完成");
+	},
+	clipFinish: function(dataURL) {
+		//console.log(dataURL);
+	}
+});
+</script>
+
+
+<script>
+$(function(){
+		
+	$("#logoBox,#change_avator").click(function(){
+
+		$(".avator_contain").fadeIn(300);
+		$('#avator_oper_show').addClass('show_operate');
+
+	})
+
+	//点击截取的图片显示
+	$("#confirm_avator").click(function(){
+		
+		if( imgsource ){
+			var is_mobile = !!navigator.userAgent.match(/mobile/i);
+
+			if (is_mobile) {
+				
+				//修复ios  
+				if (navigator.userAgent.match(/iphone/i)) { 
+					if(Orientation != "" && Orientation != 1){	
+						switch(Orientation){  
+							case 6://需要顺时针（向左）90度旋转  
+								$('#logoBox').empty().append('<img src="' + imgsource + '" align="absmiddle">').children('img').css('transform','translateZ(0) translate(0px,0px) rotate(90deg)');
+								break;  
+							case 8://需要逆时针（向右）90度旋转  
+								$('#logoBox').empty().append('<img src="' + imgsource + '" align="absmiddle">').children('img').css('transform','translateZ(0) translate(0px,0px) rotate(-90deg)');
+								break;  
+							case 3://需要180度旋转  
+								$('#logoBox').empty().append('<img src="' + imgsource + '" align="absmiddle">').children('img').css('transform','translateZ(0) translate(0px,0px) rotate(180deg)');
+								break;
+							default:
+								$('#logoBox').empty().append('<img src="' + imgsource + '" align="absmiddle">');
+						}
+					}else{
+						$('#logoBox').empty().append('<img src="' + imgsource + '" align="absmiddle">');
+					}
+				}else{
+					$('#logoBox').empty().append('<img src="' + imgsource + '" align="absmiddle">');
+				}
+			}else{
+				$('#logoBox').empty().append('<img src="' + imgsource + '" align="absmiddle">');
+			}
+			
+			$(".avator_contain").hide();
+			$('#avator_oper_show').removeClass('show_operate');
+			$('#change_avator').parent().show();
+			$('#save_avator').show();
+			
+		}else{
+			$(".avator_contain").hide();
+			$('#avator_oper_show').removeClass('show_operate');
+			$('#change_avator').parent().show();
+			$('#save_avator').hide();
+		}
+
+		
+	})
+});
+</script>
+
+
+
+<script>
+$(function(){
+
+	//点击修改，保存显示，图片操作显示
+	$('#change_avator').click(function(){
+		$('#avator_oper_show').addClass('show_operate');
+		$(this).parent().hide();
+	});
+
+})
+</script>
+
+</body>
+</html>
